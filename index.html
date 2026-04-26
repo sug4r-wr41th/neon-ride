@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a0033" />
+  <meta name="color-scheme" content="dark" />
+  <title>Neon Ride — Cocktail Club · Vice Bay</title>
+  <meta name="description" content="Neon Ride · Cocktail bar &amp; late-night club. Mixology, vinili e neon a Vice Bay. Drive fast, drink slow." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="canonical" href="#" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Orbitron:wght@500;700;900&display=swap"
+    media="print"
+    onload="this.media='all'"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://unpkg.com/@tailwindcss/browser@4" defer></script>
+  <script src="https://unpkg.com/alpinejs@3.13.5/dist/cdn.min.js" defer></script>
+  
+  <script src="index.js" defer></script>
+</head>
+
+<body class="vc-body" x-data="neonRideApp()" x-cloak>
+
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-floor" aria-hidden="true"></div>
+
+  <header class="vc-header" role="banner">
+    <div class="header-inner">
+      <a href="#hero" class="logo-link" aria-label="Neon Ride — torna su">
+        <span class="logo-word">NEON RIDE</span>
+        <span class="logo-sub">— COCKTAIL · CLUB —</span>
+      </a>
+    </div>
+    <div class="header-glow" aria-hidden="true"></div>
+  </header>
+
+  <main id="main" role="main">
+
+    <!-- HERO / PRESS START -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="ghost ghost-pink" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="hero-eyebrow">★ 1986 · ARCADE EDITION ★</p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="hero-title-line">NEON</span>
+          <span class="hero-title-line hero-title-sub">RIDE</span>
+        </h1>
+        <p class="hero-tagline">«DRIVE FAST · DRINK SLOW»</p>
+
+        <a href="#about" class="hero-cta" data-motion="pulse">
+          <span class="blink">▶ PRESS START</span>
+        </a>
+
+        <div class="insert-coin" aria-live="polite">
+          <span class="blink">▶ INSERT COIN</span>
+        </div>
+
+        <div class="coins" aria-hidden="true">
+          <span class="coin">◉</span>
+          <span class="coin">◉</span>
+          <span class="coin">◉</span>
+        </div>
+      </div>
+
+      <div class="ghost ghost-cyan" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section" aria-labelledby="about-title">
+      <header class="section-head">
+        <p class="section-eyebrow">— HELLO WORLD —</p>
+        <h2 id="about-title" class="section-title">CHI SIAMO</h2>
+        <p class="section-sub">
+          Cocktail bar &amp; late-night club. Una run continua dal tramonto all'alba.
+        </p>
+      </header>
+
+      <article class="about-card">
+        <header class="about-head" aria-hidden="true">
+          <span class="gb-led"></span>
+          <span class="gb-label">DOT MATRIX WITH STEREO SOUND</span>
+        </header>
+
+        <p class="about-line">► PLAYER 1 · VICE BAY</p>
+
+        <div class="about-lcd" aria-hidden="true">
+          <p class="lcd-row">NEON · RIDE</p>
+          <p class="lcd-row">LV.01 ▮▮▮▮▮▮▯▯▯▯</p>
+          <p class="lcd-row">HP ❤❤❤   ★ x 03</p>
+        </div>
+
+        <p class="about-paragraph">
+          Neon Ride è il pit-stop dopo il tramonto: cocktail bar di sera,
+          late-night club fino all'alba. Mixology che gira tra signature
+          scenografici, classici intramontabili e curiosità d'autore.
+        </p>
+        <p class="about-paragraph">
+          Neon Boulevard 88 · Vice Bay. Vinili a 33 giri, luci al neon e
+          una colonna sonora che non scende mai sotto i 120 BPM.
+          Power-up incluso nel prezzo.
+        </p>
+
+        <p class="about-line about-blink">★ READY PLAYER ONE ★</p>
+
+        <footer class="about-controls" aria-hidden="true">
+          <div class="gb-dpad">
+            <span class="gb-btn gb-up">▲</span>
+            <span class="gb-btn gb-left">◀</span>
+            <span class="gb-btn gb-right">▶</span>
+            <span class="gb-btn gb-down">▼</span>
+          </div>
+          <div class="gb-startsel">
+            <span class="gb-pill">SELECT</span>
+            <span class="gb-pill">START</span>
+          </div>
+          <div class="gb-ab">
+            <span class="gb-round gb-b">B</span>
+            <span class="gb-round gb-a">A</span>
+          </div>
+        </footer>
+      </article>
+    </section>
+
+    <!-- MENU / PINBALL -->
+    <section id="menu" class="menu-section" aria-labelledby="menu-title">
+      <header class="section-head">
+        <p class="section-eyebrow">— SELECT YOUR LEVEL —</p>
+        <h2 id="menu-title" class="section-title">MAIN MENÙ</h2>
+        <p class="section-sub">Scegli il drink. Ogni menù è un PDF, leggero come una vita extra.</p>
+      </header>
+
+      <ul class="menu-grid" role="list">
+        <li>
+          <a class="menu-card" href="menu/signature.pdf" target="_blank" rel="noopener" data-power="super-star">
+            <span class="menu-icon" aria-hidden="true" role="img" aria-label="Super Star">⭐</span>
+            <span class="menu-name">SIGNATURE</span>
+            <span class="menu-meta">PDF · SUPER STAR</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-card" href="menu/classics.pdf" target="_blank" rel="noopener" data-power="super-mushroom">
+            <span class="menu-icon" aria-hidden="true" role="img" aria-label="Super Mushroom">🍄</span>
+            <span class="menu-name">CLASSICS</span>
+            <span class="menu-meta">PDF · SUPER MUSHROOM</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-card" href="menu/wine.pdf" target="_blank" rel="noopener" data-power="fire-flower">
+            <span class="menu-icon" aria-hidden="true" role="img" aria-label="Fire Flower">🌸</span>
+            <span class="menu-name">WINE &amp; BUBBLES</span>
+            <span class="menu-meta">PDF · FIRE FLOWER</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-card" href="menu/spirits.pdf" target="_blank" rel="noopener" data-power="cape-feather">
+            <span class="menu-icon" aria-hidden="true" role="img" aria-label="Cape Feather">🪶</span>
+            <span class="menu-name">SPIRITS</span>
+            <span class="menu-meta">PDF · CAPE FEATHER</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-card" href="menu/food.pdf" target="_blank" rel="noopener" data-power="super-leaf">
+            <span class="menu-icon" aria-hidden="true" role="img" aria-label="Super Leaf">🍃</span>
+            <span class="menu-name">BAR FOOD</span>
+            <span class="menu-meta">PDF · SUPER LEAF</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pinball-controls" aria-hidden="true">
+        <span class="flipper flipper-left">◣</span>
+        <span class="tilt">TILT!</span>
+        <span class="flipper flipper-right">◢</span>
+      </div>
+    </section>
+
+    <!-- COLLAB -->
+    <section id="collab" class="collab-section" aria-labelledby="collab-title">
+      <header class="section-head">
+        <p class="section-eyebrow">— MULTIPLAYER MODE —</p>
+        <h2 id="collab-title" class="section-title">SPLIT SCREEN</h2>
+        <p class="section-sub">
+          Da soli si arriva al livello 3, in due al boss finale. Neon Ride fa squadra con palestre, running club e collettivi musicali della Vice Bay.
+        </p>
+      </header>
+
+      <ul class="collab-grid" role="list">
+        <li class="collab-card">
+          <figure class="collab-art" aria-label="Logo Power Up Gym">
+            <!-- Aggiungere src del logo partner. Esempio: src="assets/collab/power-up-gym.png" -->
+            <img class="collab-img" src="" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <figcaption class="collab-placeholder" aria-hidden="true">P1</figcaption>
+          </figure>
+          <p class="collab-kind">PALESTRA</p>
+          <h3 class="collab-name">Power Up Gym</h3>
+          <p class="collab-desc">
+            Box partner: dopo il WOD si fa pit-stop al banco. Recovery drink e tapas, barra HP rifornita.
+          </p>
+        </li>
+
+        <li class="collab-card">
+          <figure class="collab-art" aria-label="Logo Midnight Miles">
+            <!-- Aggiungere src del logo partner. Esempio: src="assets/collab/midnight-miles.png" -->
+            <img class="collab-img" src="" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <figcaption class="collab-placeholder" aria-hidden="true">P2</figcaption>
+          </figure>
+          <p class="collab-kind">RUNNING CLUB</p>
+          <h3 class="collab-name">Midnight Miles</h3>
+          <p class="collab-desc">
+            Pit-stop ufficiale dei runner: pre-gara la spina del caffè, post-gara cheers e stamina extra.
+          </p>
+        </li>
+
+        <li class="collab-card">
+          <figure class="collab-art" aria-label="Logo Chroma Records">
+            <!-- Aggiungere src del logo partner. Esempio: src="assets/collab/chroma-records.png" -->
+            <img class="collab-img" src="" alt="" width="640" height="360" loading="lazy" decoding="async" />
+            <figcaption class="collab-placeholder" aria-hidden="true">P3</figcaption>
+          </figure>
+          <p class="collab-kind">SERATE A TEMA</p>
+          <h3 class="collab-name">Chroma Records</h3>
+          <p class="collab-desc">
+            Vinili e DJ set partner: synth-wave, italo-disco e retrò night. Il jukebox lo accendiamo noi.
+          </p>
+        </li>
+
+        <li class="collab-cta">
+          <p class="cta-eyebrow">▶ NEW PLAYER?</p>
+          <h3 class="cta-title">LET'S PLAY</h3>
+          <p class="cta-text">
+            Sei un brand, collettivo, associazione? Parliamone!
+          </p>
+          <a class="cta-button" href="mailto:hello@neonride.example?subject=Collab%20Neon%20Ride">
+            ◉ CONTATTACI
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PARLANO DI NOI -->
+    <section id="press" class="press-section" aria-labelledby="press-title">
+      <header class="section-head">
+        <p class="section-eyebrow">— HALL OF FAME —</p>
+        <h2 id="press-title" class="section-title">HIGH SCORE</h2>
+        <p class="section-sub">
+          Cronache dal cabinato: la stampa ha messo il gettone per scrivere di noi.
+        </p>
+      </header>
+
+      <div class="press-grid">
+        <article class="press-card">
+          <div class="press-tape" aria-hidden="true">REC ●</div>
+          <p class="press-source">DRINK MAG</p>
+          <h3 class="press-headline">«&nbsp;Neon Ride: il drive-in del cocktail&nbsp;»</h3>
+          <p class="press-excerpt">
+            Tra signature scenografici e classici intramontabili,
+            un bar che gioca con la notte come un coin-op.
+            Top score della Vice Bay.
+          </p>
+          <a class="press-link" href="#segnaposto-articolo-1" rel="noopener">
+            ► CONTINUA · 1P
+          </a>
+        </article>
+
+        <article class="press-card">
+          <div class="press-tape" aria-hidden="true">REC ●</div>
+          <p class="press-source">AFTER HOURS</p>
+          <h3 class="press-headline">«&nbsp;Vice Bay By Night: il livello segreto si chiama Neon Ride&nbsp;»</h3>
+          <p class="press-excerpt">
+            Dal primo cocktail del tramonto all'ultimo brindisi prima dell'alba:
+            una run perfetta senza mai perdere una vita.
+          </p>
+          <a class="press-link" href="#segnaposto-articolo-2" rel="noopener">
+            ► CONTINUA · 2P
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section id="contatti" class="contact-section" aria-labelledby="contact-title">
+      <header class="section-head">
+        <p class="section-eyebrow">— GAME OVER —</p>
+        <h2 id="contact-title" class="section-title">DOVE SIAMO</h2>
+      </header>
+
+      <div class="contact-grid">
+        <address class="contact-card">
+          <p class="contact-label">◆ MAP</p>
+          <p class="contact-value">
+            Neon Boulevard, 88<br />
+            80088 Vice Bay (VB)
+          </p>
+          <p class="contact-label">◆ PHONE</p>
+          <p class="contact-value">
+            <a href="tel:+390888888888">088 8888 888</a><br />
+            <a href="https://wa.me/393888888888" rel="noopener">WhatsApp · 388 8888 888</a>
+          </p>
+          <p class="contact-label">◆ SOCIAL</p>
+          <p class="contact-value">
+            <a href="#" rel="noopener" target="_blank">Instagram</a> ·
+            <a href="#" rel="noopener" target="_blank">Facebook</a>
+          </p>
+          <p class="contact-label">◆ HOURS</p>
+          <p class="contact-value">
+            Mar–Gio · 18:00 → 02:00<br />
+            Ven–Sab · 18:00 → 04:00<br />
+            Dom &amp; Lun · GAME OVER
+          </p>
+        </address>
+
+        <div class="contact-arcade" aria-hidden="true">
+          <div class="arcade-screen">
+            <p class="arc-line">&gt; LOC: VICE BAY</p>
+            <p class="arc-line">&gt; STATUS: OPEN</p>
+            <p class="arc-line">&gt; CREDITS: ∞</p>
+            <p class="arc-line blink">&gt; PRESS_</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="vc-footer" role="contentinfo">
+    <p class="footer-line">© <span x-text="year"></span> · NEON RIDE · COCKTAIL CLUB</p>
+    <p class="footer-line footer-small">Made with ♥ · 8-bit love · Vice Bay</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Velluto">
+  <rect width="32" height="32" fill="#10002b"/>
+  <rect x="3"  y="3"  width="4" height="4" fill="#ff1493"/>
+  <rect x="9"  y="3"  width="4" height="4" fill="#ff1493"/>
+  <rect x="15" y="3"  width="4" height="4" fill="#ff1493"/>
+  <rect x="21" y="3"  width="4" height="4" fill="#ff1493"/>
+  <rect x="3"  y="9"  width="4" height="4" fill="#00f0ff"/>
+  <rect x="9"  y="9"  width="4" height="4" fill="#00f0ff"/>
+  <rect x="15" y="9"  width="4" height="4" fill="#00f0ff"/>
+  <rect x="21" y="9"  width="4" height="4" fill="#00f0ff"/>
+  <rect x="9"  y="15" width="4" height="4" fill="#ffe800"/>
+  <rect x="15" y="15" width="4" height="4" fill="#ffe800"/>
+  <rect x="9"  y="21" width="4" height="4" fill="#ff7f50"/>
+  <rect x="15" y="21" width="4" height="4" fill="#ff7f50"/>
+</svg>
